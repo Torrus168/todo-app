@@ -5,15 +5,12 @@ const TodoCard = ({todo, deleteTodo, index}) => {
         deleteTodo(index)
     }
     return (
-        // eslint-disable-next-line no-undef
         <div className={styles.card}>
-            {/* eslint-disable-next-line no-undef */}
             <div>
                 <h1 className={styles.header}>
                     To-Do
                 </h1>
             </div>
-            {/* eslint-disable-next-line no-undef */}
             <div className={styles.text}>
                 <p>{ todo }</p>
             </div>
