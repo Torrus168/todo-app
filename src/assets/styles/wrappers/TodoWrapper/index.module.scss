@@ -1,0 +1,34 @@
+@use '../../colors';
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  .creation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: colors.$green-basic;
+    width: 100%;
+    row-gap: 10px;
+    //border: 1px solid colors.$green-basic;
+    .input {
+      border: 1px solid black;
+      border-radius: 10px;
+    }
+    .save {
+      width: 100px;
+      background-color: white;
+      margin-bottom: 10px;
+      border: 1px solid black;
+      border-radius: 10px;
+      &:hover {
+        background-color: colors.$green-button;
+      }
+    }
+  }
+}

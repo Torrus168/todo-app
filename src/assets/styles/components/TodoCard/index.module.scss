@@ -1,0 +1,46 @@
+@use "../../colors";
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 300px;
+  margin: 25px 0 25px 0;
+  border: 2px solid colors.$green-basic;
+  border-radius: 8px;
+  .header {
+    margin-bottom: 10px;
+  }
+  .text {
+    font-size: 15px;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 5px 0 5px 0;
+    button {
+      width: 100px;
+      border: 1px solid;
+      border-radius: 5px;
+      background-color: white;
+      &:hover {
+        animation: bounce 0.5s infinite alternate;
+      }
+    }
+    .delete {
+      &:hover {
+        background-color: colors.$red;
+      }
+    }
+    .complete {
+      &:hover {
+        background-color: colors.$green-button;
+      }
+    }
+  }
+}
+@keyframes bounce {
+  to {transform: scale(1.1)}
+}
